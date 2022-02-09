@@ -1,0 +1,58 @@
+package com.company;
+
+public class MyPen {
+
+
+    //data info
+
+    private String name;                //name
+    private double inkpercentage;                 //how much ink is left in percentages
+    private boolean hasitbeenclicked;               //If its been clicked
+
+    //Access methods (change or retrieve)
+
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {                   //get the name will return the input value
+        return name;
+    }
+
+    public void setInkpercentage(double inkpercentage) {
+        this.inkpercentage = inkpercentage;
+    }
+
+    public double getInkpercentage() {
+        return inkpercentage;
+    }
+
+    public void setHasitbeenclicked(boolean hasitbeenclicked) {
+        this.hasitbeenclicked = hasitbeenclicked;
+    }
+
+    public boolean isHasitbeenclicked() {
+        return hasitbeenclicked;
+    }
+
+    public void display(){
+        System.out.println("\n=========================================================\n");
+
+        System.out.println("Name: " + getName());
+        System.out.println("Ink Percentage: " + getInkpercentage() +" %");
+
+        if (this.isHasitbeenclicked()) {
+            System.out.println("Pencil has been clicked");
+        } else {
+            System.out.println("Pencil has not been clicked");
+        }
+
+        System.out.println("\n=========================================================\n");
+    }
+}
+
+
+
+
+
