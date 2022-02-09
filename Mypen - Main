@@ -1,0 +1,55 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("\n\tISC4U Second Java Program : Main & Utility Classes\n");
+
+
+        MyPen mypen = new MyPen();                                                                     //turns class into an object
+
+        // Methods to call from Mypen class
+        mypen.setName("Bobby");                                                                                 //Modifies the method info
+        mypen.setInkpercentage(50);
+        mypen.setHasitbeenclicked(true);
+
+        System.out.println("\n===================================");
+
+        mypen.display();
+
+        System.out.println("\n===================================");
+
+        mypen.setHasitbeenclicked(false);
+
+        System.out.println("\n===================================");
+
+        mypen.display();
+
+        System.out.println("\n===================================");
+
+
+
+        // Second Pen
+
+        mypen.setName("Mervy");                                                                                 //Modifies the method info
+        mypen.setInkpercentage(25);
+        mypen.setHasitbeenclicked(false);
+
+        System.out.println("\n===================================");
+
+        mypen.display();
+
+        System.out.println("\n===================================");
+
+        mypen.setHasitbeenclicked(true);
+
+        System.out.println("\n===================================");
+
+        mypen.display();
+
+        System.out.println("\n===================================");
+
+
+
+    }
+}
